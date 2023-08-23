@@ -1,0 +1,25 @@
+.container-list {
+    margin: 0 10em;
+}
+.my-tools-title{
+    color: white;
+}
+.list-item-image {
+    margin-left: 20px
+}
+
+@media screen and (max-width: 768px) {
+    .container-list {
+        min-width: 0;
+        margin: 0 2em;
+    }
+    .list-item{
+        display: block;
+    }
+    .list-item-image {
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+ 

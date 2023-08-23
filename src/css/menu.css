@@ -1,0 +1,55 @@
+.navbar {
+    margin-bottom: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #46b0b8;
+}
+
+.logo {
+    margin-left: 1em;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+.btn-language {
+    margin-right: 1em;
+}
+.menu-items {
+    display: flex;
+    justify-content: center;
+    min-width: 700px;
+    border-inline-end: 0px !important;
+}
+.menu-items:nth-child(2) {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+    .logo {
+        margin: 1em 1em ;
+    }
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        min-width: 0px;
+    }
+    .btn-language {
+        margin: 1em 0;
+    }
+    .anticon-menu-fold {
+        font-size: 35px;
+    }
+    .ant-menu-overflow-item.ant-menu-overflow-item-rest.ant-menu-submenu.ant-menu-submenu-horizontal {
+        position: absolute;
+        right: 0;
+        margin: 0.5em;
+    }
+
+
+}
+    

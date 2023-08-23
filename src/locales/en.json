@@ -1,0 +1,94 @@
+{
+    "presentation": {
+        "Title": "Presentation",
+        "Subtitle1": "From Sports to the Code Universe: My Epic Journey!",
+        "Subtitle2": "My Evolution Through the Ages",
+        "Subtitle3": "Explore My Digital Realm",
+        "Subtitle4": "Ready to Take on New Challenges",
+        "Paragraph1": "Greetings, web adventurers!",
+        "Paragraph2": "I am Cassandra Forestier, formerly a warrior of the sports arena, and now a hero in the digital lands as a computer technician. Yes, you read that right – I swapped my sports gear for a keyboard and my technician's cap for a web developer's hat!",
+        "Paragraph3": "In a past life, I was a fearless athlete, ready to conquer anything for victory. But one day, my computer and I exchanged glances, and that's how I discovered my hidden passion: the enigmatic world of code. I went from sweating on the field to sweating in front of the screen, but one thing remained constant: my determination to overcome any challenges that come my way.",
+        "Paragraph4": "Now, I create web applications. My training and five years of full-time employment as a computer technician have deepened my understanding of the working environment, whether hardware or software. My passion for sports taught me to persevere, even when lines of code seem like a series of complex challenges.",
+        "Paragraph5": "Explore my portfolio to see how I've transformed my passion for computing into a web developer career. From[Creative Project Examples] that defy expectations to[Impressive Technical Achievements], each creation is the result of a transition that has enriched my life and career.",
+        "Paragraph6": "I'm always ready to explore new territories and take on exciting challenges. If you're ready to embark on a web adventure with me, give me a shout! Send a signal to[Your Email Address / Phone Number]."
+    },
+    "menu": {
+        "LinkToPresentation": "Presentation",
+        "LinkToProjects": "Projects",
+        "LinkToContact": "Contact",
+        "LinkToResume": "CV",
+        "LinkToStudies": "Studies",
+        "LinkToAllProjects": "All projects",
+        "LinkToCosplayMaker": "Cosplay-Maker project",
+        "LinkToSpotifake": "Spotifake project",
+        "LinkToMyTools": "My toolbox"
+    },
+    "studies": {
+        "Title": "My Studies",
+        "moreInformation": "More informations",
+        "Subtitle1": "Application Developer Designer",
+        "Subtitle2": "Bachelor's Degree in Computer Science (Work-Study Program)",
+        "Subtitle3": "Bachelor's Degree in Adapted Physical Activities and Health",
+        "Subtitle4": "High School Diploma in Science",
+        "paragraphAdditionnal": "Professional Title RNCP 31678",
+        "Paragraph1": "School: Le Bocal Academy, Nice",
+        "ParagraphSubtile1": "Worked at Alithya as part of an assignment at RegardBTP",
+        "Paragraph2": "School: IUT of Sophia-Antipolis, Sophia-Antipolis",
+        "ParagraphSubtile2": "Worked at SAP Labs France as part of an internship",
+        "Paragraph3": "School: Faculty of Sports and Physical Education, Liévin",
+        "ParagraphSubtile3": "Bachelor's Degree in Adapted Physical Activities and Health",
+        "Paragraph4": "School: Marguerite Yourcenar High School, Beuvry",
+        "ParagraphSubtile4": "With honors",
+        "date1": "September 2022 - July 2023",
+        "date2": "September 2017 - July 2019",
+        "date3": "September 2012 - July 2015",
+        "date4": "September 2009 - July 2012"
+    },
+    "cosplaymaker": {
+        "description": "The goal of this project is to provide a platform for cosplayers to plan, manage, and share their cosplays.",
+        "paragraph-desc": "Here, you will find the PowerPoint presentation created for the project defense, as well as the report.",
+        "paragraph-desc2": "I completed this project independently within 6 months as part of my training at Bocal Academy, Nice. As a cosplayer myself, this project is close to my heart. I was able to apply my knowledge in React, NodeJS, Express, MongoDB, Ant Design, Git, Github, and even Docker. I hope this project can come to fruition. It's something I would like to continue developing, as I believe it can be beneficial to the cosplay community. Feel free to explore the code available on my Github repository.",
+        "github-link": "Github repository",
+        "technologies": "Technologies used",
+        "database-card": "Database",
+        "mobile-application-card": "Mobile application",
+        "download": "Download the report/the PowerPoint",
+        "download-report": "Download the report",
+        "download-powerpoint": "Download the PowerPoint"
+    },
+    "spotifake": {
+        "description": "Spotifake offers a music streaming experience. Logged-in users can discover albums, listen to and manage their favorite music.",
+        "paragraph-desc": "This is a project we completed in 1 month and 1 week (the final week was dedicated to deploying the web application on an EC2 instance). There were 4 of us working on this assigned project. We began with requirement analysis, functional and technical analysis, and then created a project plan. We established project management methods (Kanban board, tech lead, rules, and best practices, etc.). I was able to apply my knowledge in React, NodeJS, Express, MongoDB, Material UI, Git, Github, Docker, and even worked with AWS S3 buckets. Deploying the site on an EC2 instance was a highly rewarding experience, allowing me to understand the necessary steps and adaptations to make the site accessible for everyone. Feel free to explore the code available on my Github repository.",
+        "github-link": "Github repository",
+        "technologies": "Technologies used",
+        "database": "Database"
+    },
+    "footer": {
+        "navigation": "Navigation",
+        "followMe": "Follow me",
+        "myResume": "My resume",
+        "contactMe": "Contact me",
+        "driver": "Car owner, Driver's License B",
+        "sector": "Sector: Alpes-Maritimes (06)",
+        "form": "Form",
+        "send": "Send",
+        "name": "Your name and surname",
+        "message": "Your message"
+    },
+    "toolbox": {
+        "postman-desc": "A powerful tool for testing APIs. I started the project by setting up the back-end CRUD operations. Postman allows sending HTTP requests (GET, POST, PUT, and DELETE for my use case). You can define headers, parameters, request body, and even necessary authentications using it. This will enable me, in the future, to share this Workspace with people who will join the project.",
+        "vscode-desc": "One of the most evident choices for my projects is the use of VS Code. VS Code is one of the most popular IDEs and one of the easiest to get started with. So, it was clear that I would lean towards this choice. Moreover, throughout the year, I've customized the settings of VS Code to match my preferences and needs, thanks to the numerous extensions available.",
+        "docker-desc": "Docker Desktop enables me to see my locally launched MongoDB container. This allows me to automatically start the container whenever I launch my project.",
+        "mongodb-desc": "MongoDB Compass is a graphical interface that enables interaction with my local database. It allows me to check schemas, verify the functionality of CRUD operations, and even verify data hashes. It's a tool that simplifies verification, particularly during my manual tests.I can also manage my database documents directly from this interface, making real- time modifications or even deletions if necessary.",
+        "github-desc": "Github is a must-have tool for any developer. It allows me to manage my project's source code and share it with others developers.",
+        "jira-desc": "Jira is a project management tool that I use to manage my project's tasks. It allows me to create tasks, assign them to myself or other developers, and track their progress. I can also create sprints and epics to organize my tasks. I can also create a backlog of tasks that I can add to my sprints. Finally, I can create a roadmap to visualize the progress of my project.",
+        "sendgrid-desc": "SendGrid is a tool that allows me to send emails to users. I use it to send emails to users when they register or when they forget their password. I can also use it to send emails to myself when an error occurs on the server.",
+        "snyk-desc": "Snyk is a tool that allows me to check my project's dependencies for vulnerabilities. It also allows me to fix these vulnerabilities by updating the dependencies. I can also use it to check my project's Docker image for vulnerabilities.",
+        "internship-desc": "During my internship, I used several tools that I don't use anymore. However, I think it's important to mention them because they were essential to the project's success. I used the following tools: Spring Tool Suite, Eclipse, Maven, SonarQube, Jenkins, Oracle SQL Developer"
+    },
+    "project": {
+        "more-info": "More informations",
+        "github-link": " Github repository",
+        "project-title": "My projects"
+    }
+}
