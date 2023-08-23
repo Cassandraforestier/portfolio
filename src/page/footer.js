@@ -31,10 +31,10 @@ const Footer = () => {
             <Row className="row-container" gutter={[16, 16]}>
                 <Col span={6} className="navigation-container">
                     <Menu mode="vertical" className="menu-footer">
-                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item>{t("menu.LinkToPresentation")}</Menu.Item></Link>
-                        <Link to="/studiesPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item>{t("menu.LinkToStudies")}</Menu.Item></Link>
-                        <Link to="/projectPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item>{t("menu.LinkToProjects")}</Menu.Item></Link>
-                        <Link to="/my-tools" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item>{t("menu.LinkToMyTools")}</Menu.Item></Link>
+                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToPresentation">{t("menu.LinkToPresentation")}</Menu.Item></Link>
+                        <Link to="/studiesPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToStudies">{t("menu.LinkToStudies")}</Menu.Item></Link>
+                        <Link to="/projectPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToProjects">{t("menu.LinkToProjects")}</Menu.Item></Link>
+                        <Link to="/my-tools" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToMyTools">{t("menu.LinkToMyTools")}</Menu.Item></Link>
                     </Menu>
                 </Col>
                 <Col span={6} className="follow-me-container">

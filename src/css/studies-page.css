@@ -9,6 +9,9 @@
 .studies-timeline {
    margin-right: 20em;
 }
+.study-tag-date {
+    margin: O;
+}
 @media screen and (max-width: 768px) {
     .studies-timeline {
         margin-right: 1em;

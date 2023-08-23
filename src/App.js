@@ -41,7 +41,7 @@ const themeCustom = {
 
 function App() {
   return (
-    <div className="root" style={{ backgroundColor: "#122044" }}>
+    <div className="root">
       <BrowserRouter basename='/portfolio'>
         <ConfigProvider theme={themeCustom}>
           <Routes>

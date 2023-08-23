@@ -17,7 +17,7 @@ const StudiesPage = () => {
                 mode={isMobile ? undefined : "left"}
                 items={[
                     {
-                        label: isMobile ? undefined : <Tag><Title level={5} style={{ margin: "0" }}>{t("studies.date1")}</Title></Tag>,
+                        label: isMobile ? undefined : <Tag><Title level={5} className="study-tag-date">{t("studies.date1")}</Title></Tag>,
                         children:
                             <>
                                 <Title className="study-title" level={3}>{t("studies.Subtitle1")}</Title>
@@ -29,7 +29,7 @@ const StudiesPage = () => {
                             </>,
                     },
                     {
-                        label: isMobile ? null : <Tag><Title level={5} style={{ margin: "0" }}>{t("studies.date2")}</Title></Tag>,
+                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("studies.date2")}</Title></Tag>,
                         children:
                             <>
                                 <Title className="study-title" level={3}>{t("studies.Subtitle2")}</Title>
@@ -39,7 +39,7 @@ const StudiesPage = () => {
                             </>,
                     },
                     {
-                        label: isMobile ? null : <Tag><Title level={5} style={{ margin: "0" }}>{t("studies.date3")}</Title></Tag>,
+                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("studies.date3")}</Title></Tag>,
                         children:
                             <>
                                 <Title className="study-title" level={3}>{t("studies.Subtitle3")}</Title>
@@ -49,7 +49,7 @@ const StudiesPage = () => {
                             </>,
                     },
                     {
-                        label: isMobile ? null : <Tag><Title level={5} style={{ margin: "0" }}>{t("studies.date4")}</Title></Tag>,
+                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("studies.date4")}</Title></Tag>,
                         children:
                             <>
                                 <Title className="study-title" level={3}>{t("studies.Subtitle4")}</Title>

@@ -62,7 +62,7 @@ const Spotifake = () => {
                     <img src="logo/amazon-ec2.png" alt="Amazon EC2 icon" className="amazon-ec2" />
                 </Card>
             </div >
-            <embed src='spotifake.pdf' width='60%' height='600' type='application/pdf' style={{ margin: "2em" }} />
+            <embed src='spotifake.pdf' width='60%' height='600' type='application/pdf' className="embed-pdf-spotifake" />
         </div >
     )
 }

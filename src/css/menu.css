@@ -25,6 +25,9 @@
 .menu-items:nth-child(2) {
     display: flex;
 }
+.language-img-icon {
+    height: 1.5em;
+}
 
 @media screen and (max-width: 768px) {
     .navbar {
@@ -49,7 +52,8 @@
         right: 0;
         margin: 0.5em;
     }
-
-
+    .menu-burger-icon {
+        font-size: 35px;
+    }
 }
     

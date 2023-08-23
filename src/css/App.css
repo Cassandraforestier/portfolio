@@ -6,6 +6,9 @@
   height: 40vmin;
   pointer-events: none;
 }
+.root {
+  background-color: #122044;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

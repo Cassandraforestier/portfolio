@@ -85,7 +85,13 @@ const MyTools = () => {
                         >
                             <List.Item.Meta
                                 title={<a href={tool.href}>{tool.name}</a>}
-                                description={isMobile ? <span style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>{tool.description} <img src={tool.image} alt={tool.name} style={{ width: "250px", marginTop: "1em" }} /></span> : tool.description}
+                                description={
+                                    isMobile ?
+                                        <span className="tool-description">{tool.description}
+                                            <img src={tool.image} alt={tool.name} className="img-tool-desc" />
+                                        </span>
+                                        : tool.description
+                                }
                             />
                         </List.Item>
                     )}
