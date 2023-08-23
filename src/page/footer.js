@@ -23,7 +23,7 @@ const Footer = () => {
     return (
         <div className='footer-container'>
             <div className="footer-title">
-                <h4 class>{t("footer.navigation")}</h4>
+                <h4>{t("footer.navigation")}</h4>
                 <h4>{t("footer.followMe")}</h4>
                 <h4>{t("footer.myResume")}</h4>
                 <h4>{t("footer.contactMe")}</h4>
@@ -31,10 +31,10 @@ const Footer = () => {
             <Row className="row-container" gutter={[16, 16]}>
                 <Col span={6} className="navigation-container">
                     <Menu mode="vertical" className="menu-footer">
-                        <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToPresentation">{t("menu.LinkToPresentation")}</Menu.Item></Link>
-                        <Link to="/studiesPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToStudies">{t("menu.LinkToStudies")}</Menu.Item></Link>
-                        <Link to="/projectPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToProjects">{t("menu.LinkToProjects")}</Menu.Item></Link>
-                        <Link to="/my-tools" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}><Menu.Item key="menu.LinkToMyTools">{t("menu.LinkToMyTools")}</Menu.Item></Link>
+                        <Menu.Item key="menu.LinkToPresentation"><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToPresentation")}</Link></Menu.Item>
+                        <Menu.Item key="menu.LinkToStudies"><Link to="/studiesPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToStudies")}</Link></Menu.Item>
+                        <Menu.Item key="menu.LinkToProjects"><Link to="/projectPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToProjects")}</Link></Menu.Item>
+                        <Menu.Item key="menu.LinkToMyTools"><Link to="/my-tools" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToMyTools")}</Link></Menu.Item>
                     </Menu>
                 </Col>
                 <Col span={6} className="follow-me-container">

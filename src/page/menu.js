@@ -59,10 +59,10 @@ const MenuNavbar = () => {
             <div className="logo">
                 <span>Cassandra Forestier</span>
             </div>
-            <Menu inlineCollapse={true} overflowedIndicator={<MenuFoldOutlined className="menu-burger-icon" />} className="menu-items" onClick={onClick} selectedKeys={[current]} mode={isMobile ? "horizontal" : "vertical"} items={items} />
+            <Menu overflowedIndicator={<MenuFoldOutlined className="menu-burger-icon" />} className="menu-items" onClick={onClick} selectedKeys={[current]} mode={isMobile ? "horizontal" : "vertical"} items={items} />
             <div className="btn-language">
                 <Button onClick={toggleLanguage} >
-                    <img src={`${i18n.language === 'fr' ? 'en' : 'fr'}.png`} alt={`${i18n.language === 'fr' ? 'Anglais' : 'Français'}`} className="language-img-icon" />
+                    <img src={`${process.env.PUBLIC_URL}/${i18n.language === 'fr' ? 'en' : 'fr'}.png`} alt={`${i18n.language === 'fr' ? 'Anglais' : 'Français'}`} className="language-img-icon" />
                 </Button>
             </div>
         </div>);
