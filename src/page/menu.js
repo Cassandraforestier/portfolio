@@ -62,7 +62,7 @@ const MenuNavbar = () => {
             <Menu inlineCollapse={true} overflowedIndicator={<MenuFoldOutlined style={{ fontSize: "35px" }} />} className="menu-items" onClick={onClick} selectedKeys={[current]} mode={isMobile ? "horizontal" : "vertical"} items={items} />
             <div className="btn-language">
                 <Button onClick={toggleLanguage} >
-                    <img src={`/${i18n.language === 'fr' ? 'en' : 'fr'}.png`} alt={`${i18n.language === 'fr' ? 'Anglais' : 'Français'}`} style={{ height: "1.5em" }} />
+                    <img src={`${i18n.language === 'fr' ? 'en' : 'fr'}.png`} alt={`${i18n.language === 'fr' ? 'Anglais' : 'Français'}`} style={{ height: "1.5em" }} />
                 </Button>
             </div>
         </div>);

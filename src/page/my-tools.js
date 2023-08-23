@@ -11,55 +11,55 @@ const MyTools = () => {
         {
             name: 'Postman',
             description: <span>{t("toolbox.postman-desc")}</span>,
-            image: "./logo/postman.png",
+            image: "logo/postman.png",
             href: "https://www.postman.com/",
         },
         {
             name: 'VS Code',
             description: <span>{t("toolbox.vscode-desc")}</span>,
-            image: "./logo/vscode.png",
+            image: "logo/vscode.png",
             href: "https://code.visualstudio.com/",
         },
         {
             name: 'Docker Desktop',
             description: <span>{t("toolbox.docker-desc")}</span>,
-            image: "./logo/docker-desktop.png",
+            image: "logo/docker-desktop.png",
             href: "https://www.docker.com/products/docker-desktop",
         },
         {
             name: 'MongoDB Compass',
             description: <span>{t("toolbox.mongodb-desc")}</span>,
-            image: "./logo/mongodbcompass.png",
+            image: "logo/mongodbcompass.png",
             href: "https://www.mongodb.com/products/compass",
         },
         {
             name: 'Github',
             description: <span>{t("toolbox.github-desc")}</span>,
-            image: "./logo/github.png",
+            image: "logo/github.png",
             href: "https://www.github.com/",
         },
         {
             name: 'Jira',
             description: <span>{t("toolbox.jira-desc")}</span>,
-            image: "./logo/jira.png",
+            image: "logo/jira.png",
             href: "https://www.atlassian.com/software/jira",
         },
         {
             name: 'SendGrid',
             description: <span>{t("toolbox.sendgrid-desc")}</span>,
-            image: "./logo/sendgrid.png",
+            image: "logo/sendgrid.png",
             href: "https://sendgrid.com/",
         },
         {
             name: "Snyk",
             description: <span>{t("toolbox.snyk-desc")}</span>,
-            image: "./logo/snyk.png",
+            image: "logo/snyk.png",
             href: "https://snyk.io/",
         },
         {
             name: "Internship context tools",
             description: <span>{t("toolbox.internship-desc")}</span>,
-            image: "./logo/internship.png",
+            image: "logo/internship.png",
         }
     ];
 

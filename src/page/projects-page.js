@@ -15,14 +15,14 @@ const ProjectsPage = () => {
     {
       title: "Cosplay-Maker",
       description: t("cosplaymaker.description"),
-      image: ["./cosplaymaker-img/CM1.png", "./cosplaymaker-img/Cm4.png", "./cosplaymaker-img/Cm6.png", "./cosplaymaker-img/Cm7.png", "./cosplaymaker-img/Cm8.png"],
+      image: ["cosplaymaker-img/CM1.png", "cosplaymaker-img/Cm4.png", "cosplaymaker-img/Cm6.png", "cosplaymaker-img/Cm7.png", "cosplaymaker-img/Cm8.png"],
       link: "https://github.com/Cassandraforestier/cosplay-maker",
       navigate: "/cosplay-maker"
     },
     {
       title: "Spotifake",
       description: t("spotifake.description"),
-      image: ["./spotifake-img/spotify1.png", "./spotifake-img/spotify2.png", "./spotifake-img/spotify3.png", "./spotifake-img/spotify4.png", "./spotifake-img/spotify6.png", "./spotifake-img/spotify7.png"],
+      image: ["spotifake-img/spotify1.png", "spotifake-img/spotify2.png", "spotifake-img/spotify3.png", "spotifake-img/spotify4.png", "spotifake-img/spotify6.png", "spotifake-img/spotify7.png"],
       link: "https://github.com/Le-Bocal-Academy/spotifake-rage-against-the-machine-code",
       navigate: "/spotifake"
     },
