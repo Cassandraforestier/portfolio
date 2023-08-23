@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     {
       title: "Cosplay-Maker",
       description: t("cosplaymaker.description"),
-      image: ["cosplaymaker-img/CM1.png", "cosplaymaker-img/Cm4.png", "cosplaymaker-img/Cm6.png", "cosplaymaker-img/Cm7.png", "cosplaymaker-img/Cm8.png"],
+      image: ["cosplaymaker-img/CM1.png", "cosplaymaker-img/CM3.png", "cosplaymaker-img/cm4.png", "cosplaymaker-img/cm6.png", "cosplaymaker-img/cm7.png", "cosplaymaker-img/cm8.png"],
       link: "https://github.com/Cassandraforestier/cosplay-maker",
       navigate: "/cosplay-maker"
     },
