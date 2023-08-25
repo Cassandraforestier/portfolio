@@ -5,12 +5,13 @@ import { Button, Card } from "antd";
 import { DownloadOutlined } from '@ant-design/icons';
 import { Link } from "react-router-dom";
 import Paragraph from "antd/es/typography/Paragraph";
+import React from 'react';
 import Title from "antd/es/typography/Title";
 import { useTranslation } from "react-i18next";
 
-const CosplayMaker = () => {
+const CosplayMaker: React.FC = () => {
     const { t } = useTranslation();
-    const isMobile = window.innerWidth <= 767;
+    const isMobile: boolean = window.innerWidth <= 767;
     return (
         <div className="cosplaymaker-container">
             <Title level={2} >Cosplay-Maker</Title>

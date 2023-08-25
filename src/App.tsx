@@ -1,15 +1,16 @@
 import './css/App.css';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { ConfigProvider, theme } from 'antd';
 
-import CosplayMaker from './page/cosplay-maker';
-import Layout from './layout';
-import MyTools from './page/my-tools';
-import PresentationPage from './page/presentation-page';
-import ProjectsPage from './page/projects-page';
-import Spotifake from './page/spotifake';
-import StudiesPage from './page/studies-page';
+import { ConfigProvider } from 'antd';
+import CosplayMaker from './page/cosplay-maker.tsx';
+import Layout from './layout.tsx';
+import MyTools from './page/my-tools.tsx';
+import PresentationPage from './page/presentation-page.tsx';
+import ProjectsPage from './page/projects-page.tsx';
+import React from 'react';
+import Spotifake from './page/spotifake.tsx';
+import StudiesPage from './page/studies-page.tsx';
 
 const themeCustom = {
   "token": {
@@ -39,7 +40,7 @@ const themeCustom = {
   },
 }
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="root">
       <BrowserRouter basename='/portfolio'>
@@ -48,7 +49,6 @@ function App() {
             <Route path="/" element={<Layout />}  >
               <Route index element={<PresentationPage />} />
               <Route path="/studiesPage" element={<StudiesPage />} />
-              <Route path="/aboutPage" element={<h1>coucou</h1>} />
               <Route path="/projectPage" element={<ProjectsPage />} />
               <Route path="/cosplay-maker" element={<CosplayMaker />} />
               <Route path="/spotifake" element={<Spotifake />} />

@@ -3,15 +3,24 @@ import "../css/projects-page.css"
 import { Button, Card, Carousel } from 'antd';
 
 import { GithubOutlined } from '@ant-design/icons';
+import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const { Meta } = Card;
 
-const ProjectsPage = () => {
+interface Project {
+    title: string;
+    description: string;
+    image: string[];
+    link: string;
+    navigate: string;
+}
+
+const ProjectsPage: React.FC = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Cosplay-Maker",
       description: t("cosplaymaker.description"),

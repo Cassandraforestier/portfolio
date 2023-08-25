@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
-    "shx": "^0.3.4"
+    "shx": "^0.3.4",
+    "typescript": "^5.2.2"
   }
 }

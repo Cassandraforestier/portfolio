@@ -7,7 +7,7 @@
   pointer-events: none;
 }
 .root {
-  background-color: #122044;
+  background: rgb(18,32,68);
 }
 
 @media (prefers-reduced-motion: no-preference) {

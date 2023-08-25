@@ -8,9 +8,15 @@
 
 .logo {
     margin-left: 1em;
-    color: white;
-    font-family: 'Dancing Script', cursive;
-
+    color: #6ce6ee;
+    font-family: "Montserrat Thin", sans-serif !important;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    height: 2.5em;
+    margin-right: 0.5em;
 }
 
 .btn-language {
@@ -34,7 +40,10 @@
         justify-content: flex-start;
     }
     .logo {
-        margin: 1em 1em ;
+        margin: 1em 5em 1em 1em;
+    }
+    .logo-text {
+        display: none;
     }
     .menu-items {
         flex-direction: column;
@@ -44,16 +53,15 @@
     .btn-language {
         margin: 1em 0;
     }
-    .anticon-menu-fold {
-        font-size: 35px;
-    }
+
     .ant-menu-overflow-item.ant-menu-overflow-item-rest.ant-menu-submenu.ant-menu-submenu-horizontal {
         position: absolute;
         right: 0;
         margin: 0.5em;
     }
     .menu-burger-icon {
-        font-size: 35px;
+        font-size: 35px !important;
+        margin-top: 0.2em;
     }
 }
     

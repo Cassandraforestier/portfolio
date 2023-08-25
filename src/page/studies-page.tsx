@@ -6,9 +6,9 @@ import React from 'react';
 import Title from "antd/es/typography/Title";
 import { useTranslation } from "react-i18next";
 
-const StudiesPage = () => {
+const StudiesPage: React.FC = () => {
     const { t } = useTranslation();
-    const isMobile = window.innerWidth <= 768;
+    const isMobile: boolean = window.innerWidth <= 768;
     return (
         <>
             <Title level={1} className="studies-title">{t("studies.Title")}</Title>

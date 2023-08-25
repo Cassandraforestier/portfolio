@@ -3,8 +3,6 @@ import frTranslations from "./locales/fr.json";
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-console.log(frTranslations);
-
 const resources = {
     en: {
         translation: enTranslations,

@@ -28,6 +28,12 @@
 .card-frontend {
    width: 250px;
    margin-right: 1em;
+   display: flex;
+   flex-direction: column;
+}
+.second-part-front-end {
+   display: flex;
+   align-items: center;
 }
 .card-backend {
    width: 250px;
@@ -107,7 +113,7 @@
    max-width: 100px;
 }
 .mui-icon {
-   max-width: 115px;
+   max-width: 125px;
    background-color: white;
 }
 .embed-pdf-spotifake {

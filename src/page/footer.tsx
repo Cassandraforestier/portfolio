@@ -2,21 +2,22 @@ import "../css/footer.css"
 
 import { Button, Col, Form, Input, Menu, Row, Space, Tooltip } from 'antd';
 import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
-const Footer = () => {
-    const [message, setMessage] = React.useState('');
-    const [name, setName] = React.useState('');
+const Footer: React.FC  = () => {
+    const [message, setMessage] = useState<string>('');
+    const [name, setName] = useState<string>('');
+
     useEffect(() => {
     }, [name, message]);
     const { t } = useTranslation();
-    const onFinish = () => {
-        const subject = `Message du site Web : ${name}`;
-        const body = `${message}`;
-        const mailtoLink = `mailto:cassandra.forestier@hotmail.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const onFinish: () => void  = () => {
+        const subject: string = `Message du site Web : ${name}`;
+        const body: string  = `${message}`;
+        const mailtoLink: string  = `mailto:cassandra.forestier@hotmail.fr?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         window.location.href = mailtoLink;
     };
 
@@ -58,7 +59,7 @@ const Footer = () => {
                 </Col>
                 <Col className="informations-container" span={6}>
                     <p>Forestier Cassandra</p>
-                    <p>E-mail : cassandra.forestier@hotmail.fr</p>
+                    <p>cassandra.forestier@hotmail.fr</p>
                     <p>{t("footer.driver")}</p>
                     <p>{t("footer.sector")}</p>
                 </Col>
@@ -66,7 +67,9 @@ const Footer = () => {
                     <Form onFinish={onFinish} className="form-container">
                         <p className="form-spacing">{t("footer.form")}</p>
                         <Input className="form-spacing" type="text" name="name" placeholder={t("footer.name")} onChange={(e) => setName(e.target.value)} />
-                        <Input className="form-spacing" name="message" rows="5" cols="50" placeholder={t("footer.message")} onChange={(e) => setMessage(e.target.value)}></Input>
+                        <Form.Item className="form-spacing" name="message">
+                        <Input.TextArea className="form-spacing" name="message" rows={2} placeholder={t("footer.message")} onChange={(e) => setMessage(e.target.value)}></Input.TextArea>
+                        </Form.Item>
                         <Button className="form-spacing" htmlType="submit">{t("footer.send")}</Button>
                     </Form>
                 </Col>

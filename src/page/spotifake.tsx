@@ -4,10 +4,11 @@ import { Button, Card } from "antd";
 
 import { Link } from "react-router-dom";
 import Paragraph from "antd/es/typography/Paragraph";
+import React from "react";
 import Title from "antd/es/typography/Title";
 import { useTranslation } from "react-i18next";
 
-const Spotifake = () => {
+const Spotifake: React.FC = () => {
     const { t } = useTranslation();
 
     return (
@@ -32,7 +33,7 @@ const Spotifake = () => {
                         <img src="logo/html.png" alt="Html icon" className="html-icon" />
                         <img src="logo/css.png" alt="Css icon" className="css-icon" />
                     </div>
-                    <div>
+                    <div className="second-part-front-end">
                         <img src="logo/react.png" alt="React icon" className="react-icon" />
                         <img src="logo/MUI.png" alt="Material UI icon" className="mui-icon" />
                     </div>

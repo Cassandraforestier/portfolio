@@ -4,10 +4,17 @@ import { List } from 'antd';
 import React from 'react';
 import { useTranslation } from "react-i18next";
 
-const MyTools = () => {
+interface Tool {
+    name: string;
+    description: JSX.Element;
+    image: string;
+    href?: string;
+}
+
+const MyTools: React.FC = () => {
     const { t } = useTranslation();
-    const isMobile = window.innerWidth <= 768;
-    const tools = [
+    const isMobile: boolean = window.innerWidth <= 768;
+    const tools: Tool[] = [
         {
             name: 'Postman',
             description: <span>{t("toolbox.postman-desc")}</span>,
@@ -57,7 +64,7 @@ const MyTools = () => {
             href: "https://snyk.io/",
         },
         {
-            name: "Internship context tools",
+            name: t("toolbox.internship"),
             description: <span>{t("toolbox.internship-desc")}</span>,
             image: "logo/internship.png",
         }
@@ -73,7 +80,7 @@ const MyTools = () => {
                     renderItem={(tool) => (
                         <List.Item
                             className="list-item"
-                            key={tool.title}
+                            key={tool.name}
                             extra={
                                 <img
                                     width={isMobile ? 0 : 272}

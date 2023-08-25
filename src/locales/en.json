@@ -1,16 +1,14 @@
 {
     "presentation": {
-        "Title": "Presentation",
-        "Subtitle1": "From Sports to the Code Universe: My Epic Journey!",
-        "Subtitle2": "My Evolution Through the Ages",
-        "Subtitle3": "Explore My Digital Realm",
-        "Subtitle4": "Ready to Take on New Challenges",
-        "Paragraph1": "Greetings, web adventurers!",
-        "Paragraph2": "I am Cassandra Forestier, formerly a warrior of the sports arena, and now a hero in the digital lands as a computer technician. Yes, you read that right – I swapped my sports gear for a keyboard and my technician's cap for a web developer's hat!",
-        "Paragraph3": "In a past life, I was a fearless athlete, ready to conquer anything for victory. But one day, my computer and I exchanged glances, and that's how I discovered my hidden passion: the enigmatic world of code. I went from sweating on the field to sweating in front of the screen, but one thing remained constant: my determination to overcome any challenges that come my way.",
-        "Paragraph4": "Now, I create web applications. My training and five years of full-time employment as a computer technician have deepened my understanding of the working environment, whether hardware or software. My passion for sports taught me to persevere, even when lines of code seem like a series of complex challenges.",
-        "Paragraph5": "Explore my portfolio to see how I've transformed my passion for computing into a web developer career. From[Creative Project Examples] that defy expectations to[Impressive Technical Achievements], each creation is the result of a transition that has enriched my life and career.",
-        "Paragraph6": "I'm always ready to explore new territories and take on exciting challenges. If you're ready to embark on a web adventure with me, give me a shout! Send a signal to[Your Email Address / Phone Number]."
+        "Title": "Introduction",
+        "Subtitle1": "From Sports to the World of Coding: My Amazing Journey!",
+        "Subtitle2": "A New Beginning",
+        "Subtitle3": "Explore My Digital World",
+        "Subtitle4": "Ready for New Challenges",
+        "Paragraph2": "Hello and welcome to my portfolio! I'm excited to show you my work in making computer programs. I live in La Colle-Sur-Loup, and I recently finished my studies at Bocal Academy in Nice.",
+        "Paragraph3": "Before I started making websites, I really liked playing sports. Those years taught me about never giving up, working in a team, and trying my best. Because of that, I decided to learn about computers and make things on the internet. That's how I started my computer journey, and I worked on different computer things for 5 years.",
+        "Paragraph4": "Something great happened when I got to work at Alithya for the RegardBTP project. In that group, I learned about Angular and SpringBoot Java, and how to work together well. I also did my own projects, 'Cosplay Maker' and 'Spotifake', using MongoDB, Express, React, and Node.js.",
+        "Paragraph6": "My different journey lets me see computer stuff in a special way. I'm excited to keep learning and growing in this changing field. I always like to try new things! If you want to work on websites with me, just send a message to cassandra.forestier@hotmail.fr."
     },
     "menu": {
         "LinkToPresentation": "Presentation",
@@ -80,10 +78,11 @@
         "vscode-desc": "One of the most evident choices for my projects is the use of VS Code. VS Code is one of the most popular IDEs and one of the easiest to get started with. So, it was clear that I would lean towards this choice. Moreover, throughout the year, I've customized the settings of VS Code to match my preferences and needs, thanks to the numerous extensions available.",
         "docker-desc": "Docker Desktop enables me to see my locally launched MongoDB container. This allows me to automatically start the container whenever I launch my project.",
         "mongodb-desc": "MongoDB Compass is a graphical interface that enables interaction with my local database. It allows me to check schemas, verify the functionality of CRUD operations, and even verify data hashes. It's a tool that simplifies verification, particularly during my manual tests.I can also manage my database documents directly from this interface, making real- time modifications or even deletions if necessary.",
-        "github-desc": "Github is a must-have tool for any developer. It allows me to manage my project's source code and share it with others developers.",
+        "github-desc": "GitHub is a platform for hosting and sharing code, where my project resides, allowing me to version code, track changes, establish development workflows using GitHub Actions, share with other developers, create a comprehensive Readme.md, and utilize GitHub Actions for workflow automation.",
         "jira-desc": "Jira is a project management tool that I use to manage my project's tasks. It allows me to create tasks, assign them to myself or other developers, and track their progress. I can also create sprints and epics to organize my tasks. I can also create a backlog of tasks that I can add to my sprints. Finally, I can create a roadmap to visualize the progress of my project.",
-        "sendgrid-desc": "SendGrid is a tool that allows me to send emails to users. I use it to send emails to users when they register or when they forget their password. I can also use it to send emails to myself when an error occurs on the server.",
-        "snyk-desc": "Snyk is a tool that allows me to check my project's dependencies for vulnerabilities. It also allows me to fix these vulnerabilities by updating the dependencies. I can also use it to check my project's Docker image for vulnerabilities.",
+        "sendgrid-desc": "SendGrid is a tool that allows me to send emails to users. I use it to send emails to users when they register or when they forget their password.",
+        "snyk-desc": "Snyk is a tool that helps analyze the security of dependencies in projects. It detects known vulnerabilities in third-party libraries used in a project. If it detects that any of the third-party libraries have been updated, it automatically creates a pull request on GitHub with all the necessary information. This allows for an automated analysis of the third-party software components in the project, enabling me to implement Software Composition Analysis (SCA).",
+        "internship": "Internship context tools",
         "internship-desc": "During my internship, I used several tools that I don't use anymore. However, I think it's important to mention them because they were essential to the project's success. I used the following tools: Spring Tool Suite, Eclipse, Maven, SonarQube, Jenkins, Oracle SQL Developer"
     },
     "project": {
