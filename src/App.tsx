@@ -3,14 +3,14 @@ import './css/App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { ConfigProvider } from 'antd';
-import CosplayMaker from './page/cosplay-maker.tsx';
-import Layout from './layout.tsx';
-import MyTools from './page/my-tools.tsx';
-import PresentationPage from './page/presentation-page.tsx';
-import ProjectsPage from './page/projects-page.tsx';
+import CosplayMaker from './components/cosplay-maker';
+import Layout from './layout';
+import MyTools from './components/my-tools';
+import PresentationPage from './components/presentation-page';
+import ProjectsPage from './components/projects-page';
 import React from 'react';
-import Spotifake from './page/spotifake.tsx';
-import StudiesPage from './page/studies-page.tsx';
+import Spotifake from './components/spotifake';
+import StudiesPage from './components/studies-page';
 
 const themeCustom = {
   "token": {

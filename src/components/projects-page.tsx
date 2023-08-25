@@ -43,11 +43,12 @@ const ProjectsPage: React.FC = () => {
       <div className="card-container">
         {projects.map((project, index) => (
           <Card
+            key={index + project.title}
             hoverable
             className="card"
             cover={<Carousel autoplay>
               {project.image.map((image, index) => (
-                <div>
+                <div key={index}>
                   <img className="img-carousel" alt={project.title + index} src={image} />
                 </div>
               ))}

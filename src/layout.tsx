@@ -1,5 +1,5 @@
-import Footer from './page/footer.tsx';
-import MenuNavbar from "./page/menu.tsx";
+import Footer from './components/footer';
+import MenuNavbar from "./components/menu";
 import { Outlet } from "react-router-dom";
 import React from "react";
 

@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     color: white;
+    margin-bottom: 2em;
 }
 .avatar-icon {
     border-radius: 50%;
@@ -13,6 +14,10 @@
     flex-direction: column;
     align-items: center;
     max-width: 800px;
+}
+
+div div p {
+    line-height: 1.5em;
 }
 
 @media screen and (max-width: 768px) {

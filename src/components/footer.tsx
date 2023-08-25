@@ -1,6 +1,6 @@
 import "../css/footer.css"
 
-import { Button, Col, Form, Input, Menu, Row, Space, Tooltip } from 'antd';
+import { Button, Col, Form, Input, Menu, MenuProps, Row, Space, Tooltip } from 'antd';
 import { CodeOutlined, GithubOutlined, LinkedinOutlined } from '@ant-design/icons';
 import React, { useEffect, useState } from 'react';
 
@@ -10,10 +10,36 @@ import { useTranslation } from "react-i18next";
 const Footer: React.FC  = () => {
     const [message, setMessage] = useState<string>('');
     const [name, setName] = useState<string>('');
-
+    const [current, setCurrent] = useState<string>('mail');
     useEffect(() => {
     }, [name, message]);
+    
     const { t } = useTranslation();
+    
+    const items: MenuProps['items'] = [
+        {
+            label: <Link to="/">{t("menu.LinkToPresentation")}</Link>,
+            key: 'presentation'
+        },
+        {
+            label: <Link to="/studiesPage">{t("menu.LinkToStudies")}</Link>,
+            key: "studiesPage"
+        },
+        {
+            label: <Link to="/projectPage">{t("menu.LinkToAllProjects")}</Link>,
+            key: "allprojects",
+        },
+        {
+            label: <Link to="/my-tools">{t("menu.LinkToMyTools")}</Link>,
+            key: 'tools'
+        }     
+    ]
+
+      const onClick: MenuProps['onClick'] = (e) =>  {
+        setCurrent(e.key);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+    
     const onFinish: () => void  = () => {
         const subject: string = `Message du site Web : ${name}`;
         const body: string  = `${message}`;
@@ -31,12 +57,7 @@ const Footer: React.FC  = () => {
             </div>
             <Row className="row-container" gutter={[16, 16]}>
                 <Col span={6} className="navigation-container">
-                    <Menu mode="vertical" className="menu-footer">
-                        <Menu.Item key="menu.LinkToPresentation"><Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToPresentation")}</Link></Menu.Item>
-                        <Menu.Item key="menu.LinkToStudies"><Link to="/studiesPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToStudies")}</Link></Menu.Item>
-                        <Menu.Item key="menu.LinkToProjects"><Link to="/projectPage" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToProjects")}</Link></Menu.Item>
-                        <Menu.Item key="menu.LinkToMyTools"><Link to="/my-tools" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>{t("menu.LinkToMyTools")}</Link></Menu.Item>
-                    </Menu>
+                    <Menu className="menu-footer" onClick={onClick} selectedKeys={[current]} mode={"vertical"} items={items}/>
                 </Col>
                 <Col span={6} className="follow-me-container">
                     <Space size="middle" className="space-follow-me">

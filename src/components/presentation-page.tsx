@@ -1,7 +1,7 @@
 import "../css/presentation-page.css"
 
 import React from "react";
-import avatarIcon from './../assets/avatar.png';
+import avatarIcon from '../assets/avatar.png';
 import { useTranslation } from "react-i18next";
 
 const PresentationPage: React.FC = () => {
