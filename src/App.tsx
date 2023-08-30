@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { ConfigProvider } from 'antd';
 import CosplayMaker from './components/cosplay-maker';
+import ExperiencesPage from './components/experiences-page';
 import Layout from './layout';
 import MyTools from './components/my-tools';
 import PresentationPage from './components/presentation-page';
@@ -49,6 +50,7 @@ const App: React.FC = () => {
             <Route path="/" element={<Layout />}  >
               <Route index element={<PresentationPage />} />
               <Route path="/studiesPage" element={<StudiesPage />} />
+              <Route path="/experiencesPage" element={<ExperiencesPage />} />
               <Route path="/projectPage" element={<ProjectsPage />} />
               <Route path="/cosplay-maker" element={<CosplayMaker />} />
               <Route path="/spotifake" element={<Spotifake />} />

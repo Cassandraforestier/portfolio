@@ -16,6 +16,7 @@
         "LinkToContact": "Contact",
         "LinkToResume": "CV",
         "LinkToStudies": "Studies",
+        "LinkToExperiences": "Experiences",
         "LinkToAllProjects": "All projects",
         "LinkToCosplayMaker": "Cosplay-Maker project",
         "LinkToSpotifake": "Spotifake project",
@@ -41,6 +42,60 @@
         "date2": "September 2017 - July 2019",
         "date3": "September 2012 - July 2015",
         "date4": "September 2009 - July 2012"
+    },
+    "experiences": {
+        "Title": "Experiences",
+        "Subtitle1": "Web Developer Analyst",
+        "Subtitle2": "Systems Analyst",
+        "Subtitle3": "Technical Lead/On-Site Technician",
+        "Subtitle4": "Level 2 User Support",
+        "Paragraph1": "Alithya, Sophia-Antipolis",
+        "ParagraphSubtile1": "Apprenticeship at RegardBTP",
+        "experience1": {
+            "list": {
+                "bullet1": "Successful migration from Angular 9.1 to Angular 12.4.",
+                "bullet2": "Identification and resolution of code issues using SonarQube, including problematic code, code smells, and critical errors on Angular.",
+                "bullet3": "Improved test coverage for Angular using Karma.",
+                "bullet4": "Complete migration of a 'Arbitrage' page from JSP to Angular.",
+                "bullet5": "Implemented Swagger on SpringBoot for clear API documentation.",
+                "bullet6": "Developed an administration feature for adding and visualizing pages via Swagger on SpringBoot, using Oracle as the database, with associated Junit tests.",
+                "bullet7": "Implemented an aspect-oriented system on SpringBoot to measure response times of each request in logs."
+            }
+        },
+        "experience3": {
+            "informationList1": "Skills for IT Technician Level 2:",
+            "List1": {
+                "bullet1": "Management of Hardware and Software incidents through tickets (GLPI / Ivanti)",
+                "bullet2": "Knowledge of Windows operating system",
+                "bullet3": "Management of an Airwatch Server & phone enrollment",
+                "bullet4": "On-site Hardware assistance with users",
+                "bullet5": "Usage of Microsoft Office / 365 / SCCM / AD suite",
+                "bullet6": "PC Imaging"
+            },
+            "informationList2": "Skills for Technical Lead / Team Leader:",
+            "List2": {
+                "bullet1": "Coordination of technician activities",
+                "bullet2": "Operational management of field technicians across subsidiaries",
+                "bullet3": "Facilitation of technical committee meetings",
+                "bullet4": "Ensuring and participating in procedure enhancements",
+                "bullet5": "Management of IT stock / IT and phone park",
+                "bullet6": "Onboarding of new collaborators",
+                "bullet7": "Detection and prevention of potential global incidents",
+                "bullet8": "Dedicated VIP support",
+                "bullet9": "SLA tracking on ticketing tool and weekly reporting"
+            }
+        },
+        "Paragraph2": "Alithya, Sophia-Antipolis",
+        "ParagraphSubtile2": "Assignment at ProBTP",
+        "paragraph2information": "Management of Hardware and Software incidents through tickets (Footprints / Service Now)",
+        "Paragraph3": "Experis, Sophia Antipolis",
+        "ParagraphSubtile3": "Assignment at V. Mane & Fils",
+        "Paragraph4": "SAP Labs France, Sophia-Antipolis",
+        "ParagraphSubtile4": "Apprenticeship at SAP Labs France",
+        "date1": "September 2022 - August 2023",
+        "date2": "March 2021 - September 2022",
+        "date3": "September 2019 - September 2020",
+        "date4": "July 2017 - September 2019"
     },
     "cosplaymaker": {
         "description": "The goal of this project is to provide a platform for cosplayers to plan, manage, and share their cosplays.",

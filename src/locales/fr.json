@@ -15,7 +15,8 @@
         "LinkToProjects": "Projets",
         "LinkToContact": "Contact",
         "LinkToResume": "CV",
-        "LinkToStudies": "Mes études",
+        "LinkToStudies": "Etudes",
+        "LinkToExperiences": "Expériences",
         "LinkToAllProjects": "Tous les projets",
         "LinkToCosplayMaker": "Projet Cosplay-Maker",
         "LinkToSpotifake": "Projet Spotifake",
@@ -41,6 +42,60 @@
         "date2": "Septembre 2017 - juillet 2019",
         "date3": "Septembre 2012 - juillet 2015",
         "date4": "Septembre 2009 - juillet 2012"
+    },
+    "experiences": {
+        "Title": "Mes expériences",
+        "Subtitle1": "Analyste Développeuse Web",
+        "Subtitle2": "Analyste systèmes",
+        "Subtitle3": "Référente technique/Technicienne de proximité",
+        "Subtitle4": "Support utilisateurs niveau 2",
+        "Paragraph1": "Alithya, Sophia-Antipolis",
+        "ParagraphSubtile1": "En alternance chez RegardBTP",
+        "experience1": {
+            "list": {
+                "bullet1": "Migration réussie d'Angular 9.1 vers Angular 12.4.",
+                "bullet2": "Identification et résolution des problèmes de code grâce à SonarQube incluant les codes problématiques, les code smells et les erreurs critiques sur Angular.",
+                "bullet3": "Amélioration de la couverture des tests d'Angular en utilisant Karma.",
+                "bullet4": "Migration complète d'une page 'Arbitrage' de JSP à Angular.",
+                "bullet5": "Mise en place d'un Swagger sur SpringBoot pour une documentation claire de l'API.",
+                "bullet6": "Développement d'une fonctionnalité d'administration permettant l'ajout et la visibilité des pages via Swagger sur SpringBoot, en utilisant Oracle comme base de données, avec des tests Junit associés.",
+                "bullet7": "Mise en place d'un système d'aspect orienté objet sur SpringBoot pourmesurer les temps de réponse de chaque requête en log"
+            }
+        },
+        "experience3": {
+            "informationList1": "Compétences technicien informatique N2 :",
+            "List1": {
+                "bullet1": "Gestion des incidents Hardware et Software par tickets ( GLPI / Ivanti )",
+                "bullet2": "Connaissance du système d'exploitation Windows",
+                "bullet3": "Gestion d'un Serveur Airwatch & enrôlement des téléphones",
+                "bullet4": "Assistance de proximité Hardware avec les utilisateurs",
+                "bullet5": "Utilisation du pack Microsoft Office / 365 / SCCM / AD",
+                "bullet6": "Masterisation des PC"
+            },
+            "informationList2": "Compétences référent technique / Team Leader :",
+            "List2": {
+                "bullet1": "Coordination des activités des techniciens",
+                "bullet2": "Gestion opérationnelle des techniciens itinérants sur les filiales",
+                "bullet3": "Animation des COTECH",
+                "bullet4": "Garantir et participer à l'amélioration des procédures",
+                "bullet5": "Gestion des stock IT / du parc informatique et téléphonique",
+                "bullet6": "Prise en charge des nouveaux collaborateurs",
+                "bullet7": "Détecter et prévenir les éventuels incidents globaux",
+                "bullet8": "Support privilégié VIP",
+                "bullet9": "Suivi des SLA sur l'outil de ticketing et reporting hebdomadaire"
+            }
+        },
+        "Paragraph2": "Alithya, Sophia-Antipolis",
+        "ParagraphSubtile2": "En mission chez ProBTP",
+        "paragraph2information": "Gestion des incidents Hardware et Software par tickets ( Footprints / Service Now)",
+        "Paragraph3": "Experis, Sophia Antipolis",
+        "ParagraphSubtile3": "En mission chez V. Mane & Fils",
+        "Paragraph4": "SAP Labs France, Sophia-Antipolis",
+        "ParagraphSubtile4": "En alternance chez SAP Labs France",
+        "date1": "Septembre 2022 - août 2023",
+        "date2": "Mars 2021 - septembre 2022",
+        "date3": "Septembre 2019 - septembre 2020",
+        "date4": "Juillet 2017 - septembre 2019"
     },
     "cosplaymaker": {
         "description": "Le but de ce projet est de fournir une plateforme permettant aux cosplayers de planifier, gérer et partager leurs cosplays.",

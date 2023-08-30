@@ -25,7 +25,7 @@
 .menu-items {
     display: flex;
     justify-content: center;
-    min-width: 700px;
+    min-width: 850px;
     border-inline-end: 0px !important;
 }
 .menu-items:nth-child(2) {
@@ -33,6 +33,36 @@
 }
 .language-img-icon {
     height: 1.5em;
+}
+
+@media screen and (max-width: 1100px)   {
+    .navbar {
+        justify-content: flex-start;
+    }
+    .logo {
+        margin: 1em 5em 1em 1em;
+    }
+    .logo-text {
+        display: none;
+    }
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+        min-width: 0px;
+    }
+    .btn-language {
+        margin: 1em 0;
+    }
+
+    .ant-menu-overflow-item.ant-menu-overflow-item-rest.ant-menu-submenu.ant-menu-submenu-horizontal {
+        position: absolute;
+        right: 0;
+        margin: 0.5em;
+    }
+    .menu-burger-icon {
+        font-size: 35px !important;
+        margin-top: 0.2em;
+    }
 }
 
 @media screen and (max-width: 768px) {

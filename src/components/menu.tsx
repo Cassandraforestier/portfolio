@@ -1,6 +1,6 @@
 import "./../css/menu.css"
 
-import { BookOutlined, FolderOpenOutlined, MenuFoldOutlined, ToolOutlined, UserOutlined } from '@ant-design/icons';
+import { BookOutlined, ContainerOutlined, FolderOpenOutlined, MenuFoldOutlined, ToolOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Menu } from 'antd';
 import React, { useState } from 'react';
 
@@ -26,6 +26,11 @@ const MenuNavbar: React.FC = () => {
             label: <Link to="/studiesPage">{t("menu.LinkToStudies")}</Link>, 
             icon: <BookOutlined />, 
             key: "studiesPage"
+        },
+        {
+            label: <Link to="/experiencesPage">{t("menu.LinkToExperiences")}</Link>,
+            icon: <ContainerOutlined />,
+            key: "experiencesPage" 
         },
         {
             label: t("menu.LinkToProjects") as string, 
