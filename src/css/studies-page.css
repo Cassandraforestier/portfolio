@@ -13,6 +13,7 @@
     margin-top: 1px;
     margin-bottom: 1px !important;
 }
+
 @media screen and (max-width: 768px) {
     .studies-timeline {
         margin-right: 1em;

@@ -2,8 +2,8 @@
     margin-bottom: 2em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #46b0b8;
+    box-shadow: 5px 1px 5px rgba(0, 0, 0, 0.12 );
+    padding: 2px 16px;
 }
 
 .logo {
@@ -34,6 +34,9 @@
 .language-img-icon {
     height: 1.5em;
 }
+.ant-menu {
+      background-color: transparent;
+}
 
 @media screen and (max-width: 1100px)   {
     .navbar {
@@ -58,6 +61,7 @@
         position: absolute;
         right: 0;
         margin: 0.5em;
+           
     }
     .menu-burger-icon {
         font-size: 35px !important;
@@ -88,6 +92,7 @@
         position: absolute;
         right: 0;
         margin: 0.5em;
+   
     }
     .menu-burger-icon {
         font-size: 35px !important;
