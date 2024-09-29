@@ -4,6 +4,10 @@
 .list-item-image {
     margin-left: 20px
 }
+.my-tools-title {
+    color: white;
+    margin-bottom: 11rem;
+}
 .tool-description {
     display: flex;
     flex-direction: column;

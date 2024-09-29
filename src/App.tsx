@@ -2,7 +2,7 @@ import "./css/App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import { ConfigProvider } from "antd";
+import { ConfigProvider, Tag, Timeline, Typography } from "antd";
 import CosplayMaker from "./components/cosplay-maker";
 import ExperiencesPage from "./components/experiences-page";
 import Layout from "./layout";
@@ -12,6 +12,7 @@ import ProjectsPage from "./components/projects-page";
 import React from "react";
 import Spotifake from "./components/spotifake";
 import StudiesPage from "./components/studies-page";
+import TimelineItem from "antd/es/timeline/TimelineItem";
 
 const themeCustom = {
   token: {
@@ -19,8 +20,8 @@ const themeCustom = {
     colorLink: "#008F8C",
     fontSize: 18,
     borderRadius: 6,
-    colorBgBase: "#122044",
     colorBorder: "#008F8C",
+    colorPrimary: "#008F8C",
     colorBorderSecondary: "#008F8C",
   },
   components: {

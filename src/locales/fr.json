@@ -27,11 +27,14 @@
     "studies": {
         "Title": "Mes études",
         "moreInformation": "Plus d'informations",
+        "Subtitle0": "Master MIAGE spécialité INTENSE",
         "Subtitle1": "Concepteur développeur d'Applications",
         "Subtitle2": "DUT Informatique en alternance",
         "Subtitle3": "Licence Activités Physiques Adaptées et de Santé",
         "Subtitle4": "Baccalauréat Scientifique",
         "paragraphAdditionnal": "Titre professionnel RNCP 31678",
+        "Paragraph0": "Ecole : Université de Nice-Sophia Antipolis, Nice",
+        "ParagraphSubtitle0": "En alternance chez Santiane, Nice",
         "Paragraph1": "Ecole : Le Bocal Academy, Nice",
         "ParagraphSubtile1": "En alternance chez Alithya pour une mission chez RegardBTP",
         "Paragraph2": "Ecole : IUT de Sophia-Antipolis, Sophia-Antipolis",
@@ -40,6 +43,7 @@
         "ParagraphSubtile3": "Licence Activités Physiques Adaptées et de Santé",
         "Paragraph4": "Ecole : Lycée Marguerite Yourcenar, Beuvry",
         "ParagraphSubtile4": "Avec mention",
+        "date0": "Octobre 2023 - Octobre 2024",
         "date1": "Septembre 2022 - juillet 2023",
         "date2": "Septembre 2017 - juillet 2019",
         "date3": "Septembre 2012 - juillet 2015",
@@ -47,12 +51,25 @@
     },
     "experiences": {
         "Title": "Mes expériences",
+        "Subtitle0": "Développeuse Web Frontend React",
         "Subtitle1": "Analyste Développeuse Web",
         "Subtitle2": "Analyste systèmes",
         "Subtitle3": "Référente technique/Technicienne de proximité",
         "Subtitle4": "Support utilisateurs niveau 2",
+        "Paragraph0": "Santiane, Nice",
         "Paragraph1": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile1": "En alternance chez RegardBTP",
+        "ParagraphSubtitle1": "En alternance chez RegardBTP",
+        "experience0": {
+            "list": {
+                "bullet1": "Migration des pages du projet de gestion des contrats en React.",
+                "bullet2": "Mise en conformité du code (sécurité, linter, couverture de tests, type-checking...)",
+                "bullet3": "Développement de composants génériques.",
+                "bullet4": " Mise à niveau de l’UI en responsive design.",
+                "bullet5": "Refonte complète des démarches de remboursement de santé pour les particuliers.",
+                "bullet6": "Ajout d'un outil collaboratif : créer une rétrospective à la fin d'un sprint ( équipes en Scrum ) pour un outil interne de gestion agile",
+                "bullet7": " Gestion agile: création d’un backlog, estimation des tâches pour des projets de migration."
+            }
+        },
         "experience1": {
             "list": {
                 "bullet1": "Migration réussie d'Angular 9.1 vers Angular 12.4.",
@@ -88,12 +105,13 @@
             }
         },
         "Paragraph2": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile2": "En mission chez ProBTP",
+        "ParagraphSubtitle2": "En mission chez ProBTP",
         "paragraph2information": "Gestion des incidents Hardware et Software par tickets ( Footprints / Service Now)",
         "Paragraph3": "Experis, Sophia Antipolis",
-        "ParagraphSubtile3": "En mission chez V. Mane & Fils",
+        "ParagraphSubtitle3": "En mission chez V. Mane & Fils",
         "Paragraph4": "SAP Labs France, Sophia-Antipolis",
-        "ParagraphSubtile4": "En alternance chez SAP Labs France",
+        "ParagraphSubtitle4": "En alternance chez SAP Labs France",
+        "date0": "Octobre 2023 - Octobre 2024",
         "date1": "Septembre 2022 - août 2023",
         "date2": "Mars 2021 - septembre 2022",
         "date3": "Septembre 2019 - septembre 2020",

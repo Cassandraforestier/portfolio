@@ -27,11 +27,14 @@
     "studies": {
         "Title": "My Studies",
         "moreInformation": "More informations",
+        "Subtitle0": "Master's Degree in Computer Science",
         "Subtitle1": "Application Developer Designer",
         "Subtitle2": "Bachelor's Degree in Computer Science (Work-Study Program)",
         "Subtitle3": "Bachelor's Degree in Adapted Physical Activities and Health",
         "Subtitle4": "High School Diploma in Science",
         "paragraphAdditionnal": "Professional Title RNCP 31678",
+        "Paragraph0": "School: Nice Sophia-Antipolis University",
+        "ParagraphSubtitle0": "Worked at Santiane as part of an internship",
         "Paragraph1": "School: Le Bocal Academy, Nice",
         "ParagraphSubtile1": "Worked at Alithya as part of an assignment at RegardBTP",
         "Paragraph2": "School: IUT of Sophia-Antipolis, Sophia-Antipolis",
@@ -40,6 +43,7 @@
         "ParagraphSubtile3": "Bachelor's Degree in Adapted Physical Activities and Health",
         "Paragraph4": "School: Marguerite Yourcenar High School, Beuvry",
         "ParagraphSubtile4": "With honors",
+        "date0": "October 2023 - October 2024",
         "date1": "September 2022 - July 2023",
         "date2": "September 2017 - July 2019",
         "date3": "September 2012 - July 2015",
@@ -47,12 +51,25 @@
     },
     "experiences": {
         "Title": "Experiences",
+        "Subtitle0": "Frontend Developer - React",
         "Subtitle1": "Web Developer Analyst",
         "Subtitle2": "Systems Analyst",
         "Subtitle3": "Technical Lead/On-Site Technician",
         "Subtitle4": "Level 2 User Support",
+        "Paragraph0": "Santiane, Nice",
         "Paragraph1": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile1": "Apprenticeship at RegardBTP",
+        "ParagraphSubtitle1": "Apprenticeship at RegardBTP",
+        "experience0": {
+            "list": {
+                "bullet1": "Migration of Pages for the Contract Management Project in React",
+                "bullet2": "Code Compliance: Make sure the code meets security, linter, test coverage, and type-checking standards.",
+                "bullet3": "Generic Component Development: Create reusable components to improve efficiency.",
+                "bullet4": "UI Upgrade: Update the design to be responsive for all devices.",
+                "bullet5": "Redesign Health Reimbursement Process: Improve the reimbursement steps for individuals.",
+                "bullet6": "Collaborative Tool Addition: Create a retrospective tool for Scrum teams to review sprints.",
+                "bullet7": "Agile Management: Set up a backlog and estimate tasks for migration projects."
+            }
+        },
         "experience1": {
             "list": {
                 "bullet1": "Successful migration from Angular 9.1 to Angular 12.4.",
@@ -88,12 +105,13 @@
             }
         },
         "Paragraph2": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile2": "Assignment at ProBTP",
+        "ParagraphSubtitle2": "Assignment at ProBTP",
         "paragraph2information": "Management of Hardware and Software incidents through tickets (Footprints / Service Now)",
         "Paragraph3": "Experis, Sophia Antipolis",
-        "ParagraphSubtile3": "Assignment at V. Mane & Fils",
+        "ParagraphSubtitle3": "Assignment at V. Mane & Fils",
         "Paragraph4": "SAP Labs France, Sophia-Antipolis",
-        "ParagraphSubtile4": "Apprenticeship at SAP Labs France",
+        "ParagraphSubtitle4": "Apprenticeship at SAP Labs France",
+        "date0": "October 20213 - October 2024",
         "date1": "September 2022 - August 2023",
         "date2": "March 2021 - September 2022",
         "date3": "September 2019 - September 2020",

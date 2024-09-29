@@ -19,9 +19,6 @@
     width: 550px;
     height: 480px;
 }
-.card-btn {
-    background-color: none;
-}
 
 .ant-card-meta-detail {
     display: flex;

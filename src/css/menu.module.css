@@ -183,3 +183,35 @@ body {
 .navActive .navListItem:nth-child(5) {
   transition-delay: calc(0.8s * 5 / 8 + 0.5s);
 }
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .menuIcon {
+    left: 20px;
+    top: 20px;
+  }
+
+  .navContent {
+    font-size: calc(3vw + 5px); 
+    top: 30%;
+  }
+
+  .navListItem {
+    margin: 30px 0; 
+    display: block; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navListItem {
+    font-size: calc(4vw + 5px); 
+  }
+
+    .navContent {
+    top:30%
+  }
+
+  .nav {
+    background: rgba(255, 255, 255, 0.95); 
+  }
+}

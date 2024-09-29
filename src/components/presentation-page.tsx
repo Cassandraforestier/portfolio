@@ -36,13 +36,7 @@ const allLinks: Link[] = [
 const PresentationPage: React.FC = () => {
   const { t } = useTranslation();
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "row-reverse",
-        marginTop: "7rem",
-      }}
-    >
+    <div className="presentation-page" style={{}}>
       <div className="presentation-container">
         <h1 className="title-presentation">{t("presentation.Title")}</h1>
         <h2>{t("presentation.Subtitle1")}</h2>

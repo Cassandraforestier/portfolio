@@ -1,97 +1,144 @@
-import "../css/studies-page.css"
+import "../css/studies-page.css";
 
-import { Tag, Timeline } from 'antd';
-
-import React from 'react';
+import { Tag, Timeline } from "antd";
+import React, { useEffect, useState } from "react";
 import Title from "antd/es/typography/Title";
 import { useTranslation } from "react-i18next";
 
-const ExperiencesPage: React.FC = () => {
-    const { t } = useTranslation();
-    const isMobile: boolean = window.innerWidth <= 768;
-    return (
-        <>
-            <Title level={1} className="studies-title">{t("experiences.Title")}</Title>
-            <Timeline
-                className="studies-timeline"
-                mode={isMobile ? undefined : "left"}
-                items={[
-                    {
-                        label: isMobile ? undefined : <Tag><Title level={5} className="study-tag-date">{t("experiences.date1")}</Title></Tag>,
-                        children:
-                            <>
-                                <Title className="study-title" level={3}>{t("experiences.Subtitle1")}</Title>
-                                {isMobile ? <p>{t("experiences.date1")}</p> : null}
-                                <p>{t("experiences.Paragraph1")}</p>
-                                <p>{t("experiences.ParagraphSubtile1")}</p>
-                                <ul>
-                                    <li>{t("experiences.experience1.list.bullet1")}</li>
-                                    <li>{t("experiences.experience1.list.bullet2")}</li>
-                                    <li>{t("experiences.experience1.list.bullet3")}</li>
-                                    <li>{t("experiences.experience1.list.bullet4")}</li>
-                                    <li>{t("experiences.experience1.list.bullet5")}</li>
-                                    <li>{t("experiences.experience1.list.bullet6")}</li>
-                                    <li>{t("experiences.experience1.list.bullet7")}</li>
-                                </ul>
-                            </>,
-                    },
-                    {
-                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("experiences.date2")}</Title></Tag>,
-                        children:
-                            <>
-                                <Title className="study-title" level={3}>{t("experiences.Subtitle2")}</Title>
-                                {isMobile ? <p>{t("experiences.date2")}</p> : null}
-                                <p>{t("experiences.Paragraph2")}</p>
-                                <p>{t("experiences.ParagraphSubtile2")}</p>
-                                <ul>
-                                    <li>{t("experiences.paragraph2information")}</li>
-                                </ul>
-                            </>,
-                    },
-                    {
-                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("experiences.date3")}</Title></Tag>,
-                        children:
-                            <>
-                                <Title className="study-title" level={3}>{t("experiences.Subtitle3")}</Title>
-                                {isMobile ? <p>{t("experiences.date3")}</p> : null}
-                                <p>{t("experiences.Paragraph3")}</p>
-                                <p>{t("experiences.ParagraphSubtile3")}</p>
-                                <h5>{t("experiences.experience3.informationList1")}</h5>
-                                <ul>
-                                    <li>{t("experiences.experience3.List1.bullet1")}</li>
-                                    <li>{t("experiences.experience3.List1.bullet2")}</li>
-                                    <li>{t("experiences.experience3.List1.bullet3")}</li>
-                                    <li>{t("experiences.experience3.List1.bullet4")}</li>
-                                    <li>{t("experiences.experience3.List1.bullet5")}</li>
-                                    <li>{t("experiences.experience3.List1.bullet6")}</li>
-                                </ul>
-                                <h5>{t("experiences.experience3.informationList2")}</h5>
-                                <ul>
-                                    <li>{t("experiences.experience3.List2.bullet1")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet2")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet3")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet4")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet5")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet6")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet7")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet8")}</li>
-                                    <li>{t("experiences.experience3.List2.bullet9")}</li>
-                                </ul>
-                            </>,
-                    },
-                    {
-                        label: isMobile ? null : <Tag><Title level={5} className="study-tag-date">{t("experiences.date4")}</Title></Tag>,
-                        children:
-                            <>
-                                <Title className="study-title" level={3}>{t("experiences.Subtitle4")}</Title>
-                                {isMobile ? <p>{t("experiences.date4")}</p> : null}
-                                <p>{t("experiences.Paragraph4")}</p>
-                                <p>{t("experiences.ParagraphSubtile4")}</p>
-                            </>,
-                    },
-                ]}
-            />
-        </>
-    );
+interface TimelineItem {
+  date: string;
+  subtitle: string;
+  paragraphs: string[];
+  bullets?: string[];
+  link?: string;
 }
+
+const timelineItems: TimelineItem[] = [
+  {
+    date: "date0",
+    subtitle: "Subtitle0",
+    paragraphs: ["Paragraph0"],
+    bullets: [
+      "experience0.list.bullet1",
+      "experience0.list.bullet2",
+      "experience0.list.bullet3",
+      "experience0.list.bullet4",
+      "experience0.list.bullet5",
+      "experience0.list.bullet6",
+      "experience0.list.bullet7",
+    ],
+  },
+  {
+    date: "date1",
+    subtitle: "Subtitle1",
+    paragraphs: ["Paragraph1", "ParagraphSubtitle1"],
+    bullets: [
+      "experience1.list.bullet1",
+      "experience1.list.bullet2",
+      "experience1.list.bullet3",
+      "experience1.list.bullet4",
+      "experience1.list.bullet5",
+      "experience1.list.bullet6",
+      "experience1.list.bullet7",
+    ],
+  },
+  {
+    date: "date2",
+    subtitle: "Subtitle2",
+    paragraphs: ["Paragraph2", "ParagraphSubtitle2"],
+    bullets: ["paragraph2information"],
+  },
+  {
+    date: "date3",
+    subtitle: "Subtitle3",
+    paragraphs: ["Paragraph3", "ParagraphSubtitle3"],
+    bullets: [
+      "experience3.List1.bullet1",
+      "experience3.List1.bullet2",
+      "experience3.List1.bullet3",
+      "experience3.List1.bullet4",
+      "experience3.List1.bullet5",
+      "experience3.List1.bullet6",
+      "experience3.List2.bullet1",
+      "experience3.List2.bullet2",
+      "experience3.List2.bullet3",
+      "experience3.List2.bullet4",
+      "experience3.List2.bullet5",
+      "experience3.List2.bullet6",
+      "experience3.List2.bullet7",
+      "experience3.List2.bullet8",
+      "experience3.List2.bullet9",
+    ],
+  },
+  {
+    date: "date4",
+    subtitle: "Subtitle4",
+    paragraphs: ["Paragraph4", "ParagraphSubtitle4"],
+  },
+];
+
+const ExperiencesPage: React.FC = () => {
+  const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth <= 768);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const renderTimelineItems = () => {
+    return timelineItems.map((item, index) => (
+      <Timeline.Item
+        key={index}
+        color="#008F8C"
+        label={
+          !isMobile && (
+            <Tag className="study-tag">
+              <Title level={5} className="study-tag-date">
+                {t(`experiences.${item.date}`, { defaultValue: item.date })}
+              </Title>
+            </Tag>
+          )
+        }
+      >
+        <Title className="study-title" level={3}>
+          {t(`experiences.${item.subtitle}`, { defaultValue: item.subtitle })}
+        </Title>
+        {isMobile && (
+          <p>{t(`experiences.${item.date}`, { defaultValue: item.date })}</p>
+        )}
+        {item.paragraphs.map((paragraph, index) => (
+          <p key={index}>
+            {t(`experiences.${paragraph}`, { defaultValue: paragraph })}
+          </p>
+        ))}
+        {item.bullets && item.bullets.length > 0 && (
+          <ul>
+            {item.bullets.map((bullet, index) => (
+              <li key={index}>
+                {t(`experiences.${bullet}`, { defaultValue: bullet })}
+              </li>
+            ))}
+          </ul>
+        )}
+      </Timeline.Item>
+    ));
+  };
+
+  return (
+    <>
+      <h1 className="studies-title">{t("experiences.Title")}</h1>
+      <div style={{ margin: isMobile ? "" : "0 0 0 -120px" }}>
+        <Timeline
+          className="studies-timeline"
+          mode={isMobile ? undefined : "left"}
+        >
+          {renderTimelineItems()}
+        </Timeline>
+      </div>
+    </>
+  );
+};
+
 export default ExperiencesPage;
