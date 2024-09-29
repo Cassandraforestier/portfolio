@@ -1,11 +1,13 @@
 {
     "presentation": {
         "Title": "Présentation",
+        "job": "Développeuse Web frontend React",
         "Subtitle1": "Du sport à l'univers du code : mon voyage épique !",
         "Subtitle2": "Un Nouveau Chapitre",
         "Subtitle3": "Explorez mon univers numérique",
         "Subtitle4": "Prête à relever de nouveaux défis",
-        "Paragraph2": "Bonjour et bienvenue sur mon portfolio ! Je suis ravie de vous accueillir dans mon espace dédié à ma passion pour le développement d'applications. Je suis une Conceptrice Développeuse d'Applications basée à La Colle-Sur-Loup, et j'ai récemment obtenu mon titre au Bocal Academy à Nice.",
+        "Paragraph2": "Bonjour et bienvenue sur mon portfolio ! Je suis ravie de vous accueillir dans mon espace dédié à ma passion pour le développement d'applications. Je suis une Conceptrice Développeuse d'Applications basée à La Colle-Sur-Loup, et ",
+        "Obtention": "j'ai récemment obtenu mon master MIAGE à l'université de Nice-Sophia Antipolis.",
         "Paragraph3": "Avant de me lancer dans le développement Web, j'ai consacré une partie de ma vie à mon amour pour le sport. Ces années passées dans l'univers du sport m'ont appris l'importance de la persévérance, de l'esprit d'équipe et du dépassement de soi. Forte de cette expérience, j'ai décidé de canaliser cette énergie dans le monde numérique. C'est ainsi que mon voyage dans l'informatique a commencé, j'ai fait 5 ans de missions diverses en tant que technicienne informatique.",
         "Paragraph4": "La chance m'a souri lorsque j'ai eu l'opportunité d'être en alternance chez Alithya pour la mission RegardBTP. Au sein de cette équipe, j'ai exploré les complexités d'Angular et de SpringBoot Java, tout en respectant les méthodes Agile / Scrum. Cette période a également été marquée par mon investissement dans des projets personnels, 'Cosplay Maker' et 'Spotifake', construits avec la stack MERN (MongoDB, Express, React, Node.js).",
         "Paragraph6": "Mon parcours atypique et diversifié me permet d'apporter une perspective unique au développement d'applications. J'ai hâte de continuer à apprendre, grandir et contribuer dans ce domaine en constante évolution. Je suis toujours partante pour relever des défis passionnants! Si vous êtes prêt(e) à vous embarquer dans une aventure web avec moi, faites-moi signe! Envoyez un signal à cassandra.forestier@hotmail.fr"

@@ -15,28 +15,20 @@ import StudiesPage from "./components/studies-page";
 
 const themeCustom = {
   token: {
-    // "colorPrimary": "#46b0b8",
-    colorInfo: "#a3a9f7",
-    // "colorTextBase": "#424242",
-    colorLink: "#a3a9f7",
+    colorInfo: "#E8FDF1",
+    colorLink: "#008F8C",
     fontSize: 18,
     borderRadius: 6,
-    // "colorBgBase": "#122044",
-    colorBorder: "#a3a9f7",
-    // colorBorderSecondary: "rgb(70, 176, 184)",
+    colorBgBase: "#122044",
+    colorBorder: "#008F8C",
+    colorBorderSecondary: "#008F8C",
   },
   components: {
     Card: {
-      headerBg: "#a3a9f7",
-    },
-    Typography: {
-      // colorTextHeading: "#a3a9f7",
+      headerBg: "#008F8C",
     },
     Carousel: {
-      colorBgContainer: "#a3a9f7",
-    },
-    Tooltip: {
-      colorBgSpotlight: "#a3a9f7",
+      colorBgContainer: "#008F8C",
     },
   },
 };

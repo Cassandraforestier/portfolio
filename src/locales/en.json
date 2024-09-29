@@ -1,11 +1,13 @@
 {
     "presentation": {
         "Title": "Introduction",
+        "job": "Frontend Developer - React",
         "Subtitle1": "From Sports to the World of Coding: My Amazing Journey!",
         "Subtitle2": "A New Beginning",
         "Subtitle3": "Explore My Digital World",
         "Subtitle4": "Ready for New Challenges",
-        "Paragraph2": "Hello and welcome to my portfolio! I'm excited to show you my work in making computer programs. I live in La Colle-Sur-Loup, and I recently finished my studies at Bocal Academy in Nice.",
+        "Paragraph2": "Hello and welcome to my portfolio! I'm excited to show you my work in making computer programs. I live in La Colle-Sur-Loup, and ",
+        "Obtention": "I recently obtained my master's degree in computer science.",
         "Paragraph3": "Before I started making websites, I really liked playing sports. Those years taught me about never giving up, working in a team, and trying my best. Because of that, I decided to learn about computers and make things on the internet. That's how I started my computer journey, and I worked on different computer things for 5 years.",
         "Paragraph4": "Something great happened when I got to work at Alithya for the RegardBTP project. In that group, I learned about Angular and SpringBoot Java, and how to work together well. I also did my own projects, 'Cosplay Maker' and 'Spotifake', using MongoDB, Express, React, and Node.js.",
         "Paragraph6": "My different journey lets me see computer stuff in a special way. I'm excited to keep learning and growing in this changing field. I always like to try new things! If you want to work on websites with me, just send a message to cassandra.forestier@hotmail.fr."
