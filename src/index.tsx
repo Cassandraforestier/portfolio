@@ -1,14 +1,16 @@
-import './css/index.css';
-import './i18n';
+import "./css/index.css";
+import "./i18n";
 
-import App from './app';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import reportWebVitals from './reportWebVitals';
+import App from "./App";
+import React from "react";
+import ReactDOM from "react-dom/client";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 
-if (!root) throw new Error('Failed to find the root element');
+if (!root) throw new Error("Failed to find the root element");
 
 root.render(
   <React.StrictMode>
