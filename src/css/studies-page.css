@@ -1,18 +1,24 @@
 .study-title {
     margin-top: 0;
+
 }
 .studies-title {
     display: flex;
     justify-content: center;
     margin-bottom: 2em;
+     color: white;
+     margin-bottom: 12rem;
 }
-.studies-timeline {
-   margin-right: 20em;
+.study-tag {
+  background-color: #008F8C !important;
 }
+
 .study-tag-date {
     margin-top: 1px;
     margin-bottom: 1px !important;
+     color: white !important;
 }
+
 @media screen and (max-width: 768px) {
     .studies-timeline {
         margin-right: 1em;

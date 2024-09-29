@@ -4,7 +4,6 @@
    justify-content: space-between;
    align-items: center;
    flex: 1;
-   background-color: #20356a;
 }
 
 .cosplaymaker-container {
@@ -73,25 +72,21 @@
 }
 .antd-icon {
    max-width: 100px;
-   background-color: white;
 }
 .nodejs-icon {
    max-width: 100px;
 }
 .express-icon {
    max-width: 100px;
-   background-color: white;
 }
 .mongodb-icon {
    max-width: 100px;
-   background-color: white;
 }
 .mongoose-icon {
    max-width: 100px;
 }
 .docker-icon {
    max-width: 125px;
-   background-color: white;
 }
 .github-icon {
    max-width: 150px;
@@ -107,14 +102,12 @@
 }
 .amazon-ec2 {
    max-width: 125px;
-   background-color: white;
 }
 .bucket-s3 {
    max-width: 100px;
 }
 .mui-icon {
    max-width: 125px;
-   background-color: white;
 }
 .embed-pdf-spotifake {
    margin: 2em;

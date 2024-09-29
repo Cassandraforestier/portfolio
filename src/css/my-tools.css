@@ -1,11 +1,12 @@
 .container-list {
     margin: 0 10em;
 }
-.my-tools-title{
-    color: white;
-}
 .list-item-image {
     margin-left: 20px
+}
+.my-tools-title {
+    color: white;
+    margin-bottom: 11rem;
 }
 .tool-description {
     display: flex;

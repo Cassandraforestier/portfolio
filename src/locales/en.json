@@ -1,11 +1,13 @@
 {
     "presentation": {
         "Title": "Introduction",
+        "job": "Frontend Developer - React",
         "Subtitle1": "From Sports to the World of Coding: My Amazing Journey!",
         "Subtitle2": "A New Beginning",
         "Subtitle3": "Explore My Digital World",
         "Subtitle4": "Ready for New Challenges",
-        "Paragraph2": "Hello and welcome to my portfolio! I'm excited to show you my work in making computer programs. I live in La Colle-Sur-Loup, and I recently finished my studies at Bocal Academy in Nice.",
+        "Paragraph2": "Hello and welcome to my portfolio! I'm excited to show you my work in making computer programs. I live in La Colle-Sur-Loup, and ",
+        "Obtention": "I recently obtained my master's degree in computer science.",
         "Paragraph3": "Before I started making websites, I really liked playing sports. Those years taught me about never giving up, working in a team, and trying my best. Because of that, I decided to learn about computers and make things on the internet. That's how I started my computer journey, and I worked on different computer things for 5 years.",
         "Paragraph4": "Something great happened when I got to work at Alithya for the RegardBTP project. In that group, I learned about Angular and SpringBoot Java, and how to work together well. I also did my own projects, 'Cosplay Maker' and 'Spotifake', using MongoDB, Express, React, and Node.js.",
         "Paragraph6": "My different journey lets me see computer stuff in a special way. I'm excited to keep learning and growing in this changing field. I always like to try new things! If you want to work on websites with me, just send a message to cassandra.forestier@hotmail.fr."
@@ -25,11 +27,14 @@
     "studies": {
         "Title": "My Studies",
         "moreInformation": "More informations",
+        "Subtitle0": "Master's Degree in Computer Science",
         "Subtitle1": "Application Developer Designer",
         "Subtitle2": "Bachelor's Degree in Computer Science (Work-Study Program)",
         "Subtitle3": "Bachelor's Degree in Adapted Physical Activities and Health",
         "Subtitle4": "High School Diploma in Science",
         "paragraphAdditionnal": "Professional Title RNCP 31678",
+        "Paragraph0": "School: Nice Sophia-Antipolis University",
+        "ParagraphSubtitle0": "Worked at Santiane as part of an internship",
         "Paragraph1": "School: Le Bocal Academy, Nice",
         "ParagraphSubtile1": "Worked at Alithya as part of an assignment at RegardBTP",
         "Paragraph2": "School: IUT of Sophia-Antipolis, Sophia-Antipolis",
@@ -38,6 +43,7 @@
         "ParagraphSubtile3": "Bachelor's Degree in Adapted Physical Activities and Health",
         "Paragraph4": "School: Marguerite Yourcenar High School, Beuvry",
         "ParagraphSubtile4": "With honors",
+        "date0": "October 2023 - October 2024",
         "date1": "September 2022 - July 2023",
         "date2": "September 2017 - July 2019",
         "date3": "September 2012 - July 2015",
@@ -45,12 +51,25 @@
     },
     "experiences": {
         "Title": "Experiences",
+        "Subtitle0": "Frontend Developer - React",
         "Subtitle1": "Web Developer Analyst",
         "Subtitle2": "Systems Analyst",
         "Subtitle3": "Technical Lead/On-Site Technician",
         "Subtitle4": "Level 2 User Support",
+        "Paragraph0": "Santiane, Nice",
         "Paragraph1": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile1": "Apprenticeship at RegardBTP",
+        "ParagraphSubtitle1": "Apprenticeship at RegardBTP",
+        "experience0": {
+            "list": {
+                "bullet1": "Migration of Pages for the Contract Management Project in React",
+                "bullet2": "Code Compliance: Make sure the code meets security, linter, test coverage, and type-checking standards.",
+                "bullet3": "Generic Component Development: Create reusable components to improve efficiency.",
+                "bullet4": "UI Upgrade: Update the design to be responsive for all devices.",
+                "bullet5": "Redesign Health Reimbursement Process: Improve the reimbursement steps for individuals.",
+                "bullet6": "Collaborative Tool Addition: Create a retrospective tool for Scrum teams to review sprints.",
+                "bullet7": "Agile Management: Set up a backlog and estimate tasks for migration projects."
+            }
+        },
         "experience1": {
             "list": {
                 "bullet1": "Successful migration from Angular 9.1 to Angular 12.4.",
@@ -86,12 +105,13 @@
             }
         },
         "Paragraph2": "Alithya, Sophia-Antipolis",
-        "ParagraphSubtile2": "Assignment at ProBTP",
+        "ParagraphSubtitle2": "Assignment at ProBTP",
         "paragraph2information": "Management of Hardware and Software incidents through tickets (Footprints / Service Now)",
         "Paragraph3": "Experis, Sophia Antipolis",
-        "ParagraphSubtile3": "Assignment at V. Mane & Fils",
+        "ParagraphSubtitle3": "Assignment at V. Mane & Fils",
         "Paragraph4": "SAP Labs France, Sophia-Antipolis",
-        "ParagraphSubtile4": "Apprenticeship at SAP Labs France",
+        "ParagraphSubtitle4": "Apprenticeship at SAP Labs France",
+        "date0": "October 20213 - October 2024",
         "date1": "September 2022 - August 2023",
         "date2": "March 2021 - September 2022",
         "date3": "September 2019 - September 2020",

@@ -1,78 +1,92 @@
-import "./../css/menu.css"
-
-import { BookOutlined, ContainerOutlined, FolderOpenOutlined, MenuFoldOutlined, ToolOutlined, UserOutlined } from '@ant-design/icons';
-import { Button, Menu } from 'antd';
-import React, { useState } from 'react';
-
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import type { MenuProps } from 'antd';
 import { useTranslation } from "react-i18next";
+import styles from "../css/menu.module.css";
+import { ParseKeys } from "i18next";
 
-const MenuNavbar: React.FC = () => {
-    const { t, i18n } = useTranslation();
-    const [current, setCurrent] = useState<string>('mail');
-    const toggleLanguage: () => void = () => {
-        const newLanguage = i18n.language === 'fr' ? 'en' : 'fr';
-        i18n.changeLanguage(newLanguage);
-    };
-    const isMobile: boolean = window.innerWidth <= 678;
-    const items: MenuProps['items'] = [
-        {
-            label: <Link to="/">{t("menu.LinkToPresentation")}</Link>, 
-            icon: <UserOutlined />, 
-            key: 'presentation'
-        },
-        {
-            label: <Link to="/studiesPage">{t("menu.LinkToStudies")}</Link>, 
-            icon: <BookOutlined />, 
-            key: "studiesPage"
-        },
-        {
-            label: <Link to="/experiencesPage">{t("menu.LinkToExperiences")}</Link>,
-            icon: <ContainerOutlined />,
-            key: "experiencesPage" 
-        },
-        {
-            label: t("menu.LinkToProjects") as string, 
-            icon: <FolderOpenOutlined />, 
-            key: "projects", 
-            children: [
-            {
-                label:  <Link to="/projectPage">{t("menu.LinkToAllProjects")}</Link>, 
-                key: 'allProjects'
-            },
-            {
-                label: <Link to="/cosplay-maker">{t("menu.LinkToCosplayMaker")}</Link>, 
-                key: 'cosplaymaker'
-            },
-            {
-                label: <Link to="/spotifake">{t("menu.LinkToSpotifake")}</Link>, 
-                key: 'spotifake'
-            }
-        ]},
-        {
-            label: <Link to="/my-tools">{t("menu.LinkToMyTools")}</Link>, 
-            icon: <ToolOutlined />, 
-            key: 'tools'
-        }
-    ];
+interface MenuLink {
+  title: ParseKeys;
+  to: string;
+}
 
-    const onClick: MenuProps['onClick'] = (e) =>  {
-        setCurrent(e.key);
-    };
+const MenuLinks: MenuLink[] = [
+  {
+    title: "menu.LinkToPresentation",
+    to: "/",
+  },
+  {
+    title: "menu.LinkToStudies",
+    to: "/studiesPage",
+  },
+  {
+    title: "menu.LinkToExperiences",
+    to: "/experiencesPage",
+  },
+  {
+    title: "menu.LinkToMyTools",
+    to: "/my-tools",
+  },
+  {
+    title: "menu.LinkToProjects",
+    to: "/projectPage",
+  },
+];
 
-    return (
-        <div className="navbar">
-            <div className="logo">
-                <img src={`${process.env.PUBLIC_URL}/logo/logo-cf.png`} alt="logo" />
-                <span className="logo-text">Cassandra Forestier</span>
-            </div>
-             <Menu overflowedIndicator={<MenuFoldOutlined className="menu-burger-icon" />} className="menu-items" onClick={onClick} selectedKeys={[current]} mode={isMobile ? "horizontal" : "vertical"} items={items}/>
-            <div className="btn-language">
-                <Button onClick={toggleLanguage} >
-                    <img src={`${process.env.PUBLIC_URL}/${i18n.language === 'fr' ? 'en' : 'fr'}.png`} alt={`${i18n.language === 'fr' ? 'Anglais' : 'Français'}`} className="language-img-icon" />
-                </Button>
-            </div>
-        </div>);
+const MenuNavbar = () => {
+  const { t, i18n } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleLanguage = () => {
+    const newLanguage = i18n.language === "fr" ? "en" : "fr";
+    i18n.changeLanguage(newLanguage);
+  };
+
+  return (
+    <div
+      className={isMenuOpen ? `${styles.navActive} ${styles.whiteColor}` : ""}
+    >
+      <div style={{ display: "flex", flexDirection: "row-reverse" }}>
+        <div
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className={styles.menuIcon}
+        >
+          <span
+            className={`${styles.menuIconLine} ${styles.menuIconLineLeft}`}
+          ></span>
+          <span className={styles.menuIconLine}></span>
+          <span
+            className={`${styles.menuIconLine} ${styles.menuIconLineRight}`}
+          ></span>
+        </div>
+
+        <img
+          onClick={toggleLanguage}
+          src={`${process.env.PUBLIC_URL}/${
+            i18n.language === "fr" ? "en" : "fr"
+          }.png`}
+          alt={`${i18n.language === "fr" ? "Anglais" : "Français"}`}
+          className="language-img-icon"
+          style={{ maxHeight: "26px", margin: "16px", cursor: "pointer" }}
+        />
+      </div>
+      <div className={styles.nav}>
+        <div className={styles.navContent}>
+          <ul className={styles.navList}>
+            {MenuLinks.map((link) => (
+              <li className={styles.navListItem}>
+                <Link
+                  to={link.to}
+                  style={{ textDecoration: "none", color: "#008F8C" }}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {t(link.title)}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 };
+
 export default MenuNavbar;
